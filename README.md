@@ -94,7 +94,7 @@ Github,fork
 ---
 
 - 塊の目標サイズと塊の現在の大きさが表示されている。  
-<img src = "Markdown_movie\sphereSizeTextUI.gif" width = "300">
+<img src = "Markdown_movie\SphereSizeTextUI.gif" width = "300">
 
 ---
 #### 3. 操作説明  
