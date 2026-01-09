@@ -1,0 +1,156 @@
+/* =========================================
+   1. 印刷・PDF化の設定
+   ========================================= */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  body { animation: none !important; box-shadow: none !important; }
+}
+
+/* =========================================
+   2. 壁紙（背景アニメーション）の設定
+   ========================================= */
+@keyframes flowingLines {
+  0% { background-position: 0 0, 15px 15px, 30px 5px, 0 0; }
+  100% { background-position: 0 0, 15px 15px, 30px 5px, 400px 400px; }
+}
+
+html {
+  height: 100%;
+  background-color: #f0f2f5; 
+  background-image: 
+    radial-gradient(circle at center, rgba(255, 182, 193, 0.6) 3px, transparent 3px),
+    radial-gradient(circle at center, rgba(173, 216, 230, 0.6) 3px, transparent 3px),
+    radial-gradient(circle at center, rgba(255, 250, 205, 0.6) 3px, transparent 3px),
+    repeating-linear-gradient(135deg, transparent, transparent 40px, rgba(0, 0, 0, 0.04) 40px, rgba(0, 0, 0, 0.04) 41px);
+  background-size: 45px 45px, 45px 45px, 45px 45px, auto auto;
+  animation: flowingLines 60s linear infinite;
+}
+
+/* =========================================
+   3. 紙（本文エリア）の設定
+   ★ここで文字サイズと紙のデザインを決めています
+   ========================================= */
+body {
+  /* ▼ 文字サイズ（ここを変えれば確実に変わります） */
+  font-size: 20px;  
+  
+  /* ▼ 紙の横幅（文字が大きいので広めに確保） */
+  max-width: 840px;
+  
+  /* 紙の色と配置 */
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 40px auto;      /* 中央寄せ */
+  padding: 40px;          /* 余白 */
+  border-radius: 12px;    /* 角丸 */
+  box-shadow: 0 15px 50px rgba(0,0,0,0.15); /* 影 */
+  
+  color: #333;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.8;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   4. 見出しのデザイン
+   ========================================= */
+h1, h2, h3 {
+  color: #5a57b5;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.4em;
+  text-align: center;
+  border-bottom: 3px solid rgba(90, 87, 181, 0.3);
+  padding-bottom: 15px;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.8em; 
+  border-left: 10px solid #5a57b5;
+  padding-left: 20px;
+  background: linear-gradient(to right, rgba(90, 87, 181, 0.1), transparent);
+  margin-top: 2em;
+}
+
+h3 {
+  font-size: 1.4em; /* 24px × 1.5 = 36px */
+  border-bottom: 3px dotted rgba(90, 87, 181, 0.5);
+  display: inline-block;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h3 + p { margin-top: 0; margin-left: 2em; }
+
+/* 小見出し（帯デザイン） */
+h4 {
+  font-size: 1.2em;
+  background-color: #f4f4ff;
+  border-left: 8px solid #6a67ce;
+  padding: 15px 20px;
+  margin-top: 40px;
+  border-radius: 0 5px 5px 0;
+}
+
+/* =========================================
+   5. その他のパーツ
+   ========================================= */
+/* 画像 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* 画像の横並び用 */
+.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+.image-row img { margin: 0; display: inline-block; }
+
+/* リンク */
+a { color: #5a57b5; text-decoration: none; font-weight: bold; }
+a:hover { border-bottom: 2px dotted #5a57b5; }
+
+/* フローチャート */
+.mermaid { background-color: transparent !important; margin: 30px auto; text-align: center; }
+
+/* リスト */
+ul, ol { padding-left: 1.5em; }
+li { margin-bottom: 0.5em; }
+
+.two-column {
+  display: flex;        /* 横並びにする */
+  align-items: center;  /* 上下の中心を揃える */
+  gap: 40px;            /* 画像と文字の間隔 */
+  margin: 30px 0;       /* 上下の余白 */
+  flex-wrap: wrap;      /* 画面が狭いときは自動で縦並びに戻す */
+}
+
+/* 左右の比率を調整（文字を少し広く） */
+.two-column .text-area {
+  flex: 1;              /* 余ったスペースを文字が使う */
+  min-width: 300px;     /* 最低限の幅を確保 */
+}
+
+.two-column .img-area {
+  flex: 0 0 400px;      /* 画像エリアの幅を400pxで固定（お好みで調整） */
+  text-align: center;
+}
+/* 画像エリアの中の画像調整 */
+.two-column .img-area img {
+  margin: 0;            /* 既存のmarginをリセット */
+  max-width: 100%;
+}
