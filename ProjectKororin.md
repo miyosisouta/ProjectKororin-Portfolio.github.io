@@ -3,9 +3,8 @@
 <head>
 <title>ポートフォリオ</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-
+<link rel="icon" href="fvicon.png" type="image/png">
 <link rel="stylesheet" href="style.css">
-
 <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
 </head>
 <body>
