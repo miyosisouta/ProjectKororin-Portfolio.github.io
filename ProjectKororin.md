@@ -40,6 +40,11 @@
   三好 爽太　(みよし そうた)</span>
 </p>
 
+<h3 id="%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9"><strong>メールアドレス</strong></h3>
+<p>
+  <span style="border-bottom: 2px solid #5a57b5;">
+  CA01244028@st.kawahara.ac.jp</span>
+</p>
 
 
 <h2 id="2%E4%BD%9C%E5%93%81%E6%A6%82%E8%A6%81">2.作品概要</h2>
