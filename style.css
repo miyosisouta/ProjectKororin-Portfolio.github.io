@@ -154,3 +154,32 @@ li { margin-bottom: 0.5em; }
   margin: 0;            /* 既存のmarginをリセット */
   max-width: 100%;
 }
+
+
+/* 動画を横並びにするコンテナ */
+.video-row {
+  display: flex;
+  justify-content: space-between; /* 均等配置 */
+  gap: 10px; /* 動画同士の隙間 */
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* 動画単体のスタイル */
+.video-row video {
+  width: 48%; /* 2つ並べるので半分より少し小さく */
+  height: auto; /* 高さは自動調整 */
+  border-radius: 8px; /* 角を少し丸くする（お好みで） */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 影をつける（お好みで） */
+}
+
+/* スマホ閲覧時（画面が狭い時）は縦並びにする設定 */
+@media (max-width: 768px) {
+  .video-row {
+    flex-direction: column;
+  }
+  .video-row video {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

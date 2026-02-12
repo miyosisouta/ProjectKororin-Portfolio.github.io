@@ -154,8 +154,22 @@
 </ul>
 
 
+<h4>3. 演出</h4>
+<p>ゲーム内の演出の紹介動画です。</p>
 
-<h4 id="3-%E6%93%8D%E4%BD%9C%E8%AA%AC%E6%98%8E">3. 操作説明</h4>
+<ul>
+<li><strong>ゲームクリア</strong></li>
+<img src="Markdown_movie/GameClear.gif" width="450" alt="タイマーUI"></li>
+</ul>
+
+<ul>
+<li><strong>ゲームオーバー</strong></li>
+<img src="Markdown_movie/GameOver.gif" width="450" alt="タイマーUI"></li>
+</ul>
+
+
+
+<h4 id="3-%E6%93%8D%E4%BD%9C%E8%AA%AC%E6%98%8E">4. 操作説明</h4>
 <div class="two-column">
   
   <div class="text-area">
