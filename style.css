@@ -1,8 +1,21 @@
 body {
-    background-color: #1e1e1e; /* 画像がない部分の背景色 */
+    background-color: #b4f1f9;
+    color: #000000;
 }
 
-/* セクションごとに背景画像を設定 */
-h1:nth-of-type(1) ~ * {  
-    background-image: url('Markdown_sprite\test.png');
+h1, h2, h3, h4 {
+    color: #000000;
+}
+
+a {
+    color: #0000ee;
+}
+
+table {
+    color: #000000;
+}
+
+blockquote {
+    color: #000000;
+    border-left: 4px solid #000000;
 }

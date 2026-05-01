@@ -1,3 +1,5 @@
+<link href="style.css" rel="stylesheet" />
+
 <span style="font-size: 30px;">ころりん</span>
 ---
 
