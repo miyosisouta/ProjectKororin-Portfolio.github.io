@@ -1,8 +1,5 @@
 <link href="style.css" rel="stylesheet" />
 
-<span style="font-size: 30px;">ころりん</span>
----
-
 <img src="Markdown_sprite\title.png" width="600" alt="タイトル画像">
 
 ---
