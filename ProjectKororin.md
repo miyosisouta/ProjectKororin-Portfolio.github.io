@@ -216,7 +216,7 @@
 <img src="Markdown_sprite\json.png" width="200" alt="JSON">
 
 <br>
-<span style="display:block;margin-bottom:0.8em;"></span>  
+<span style="display:block;margin-bottom:1.5em;"></span>  
 
 > - Toolsからワンクリックでjsonファイルを作れるようにしました  
 > - jsonファイルを自動的にバイナリファイルに変換できるようにし、指定したファイルに作れられるよう変更しました
@@ -224,7 +224,7 @@
 <img src="Markdown_sprite\CreateJsonFile.png" width="400" alt="jsonファイルを作成">
 
 <br>
-<span style="display:block;margin-bottom:0.8em;"></span>  
+<span style="display:block;margin-bottom:1.5em;"></span>  
 
 > - ファイルサイズが7分の1に！
 
