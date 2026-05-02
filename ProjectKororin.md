@@ -14,12 +14,16 @@
 > [2. 作品概要](#2作品概要)
 > <span style="display:block;margin-bottom:0.2em;"></span>
 > [3. ゲーム紹介](#3ゲーム紹介)<br>
-> 　[・ ゲーム内容](#1作品内容)<br>
+> 　[・ ゲーム内容](#1ゲーム内容)<br>
 > 　[・ ルール](#2ルール)<br>
 > 　[・ 演出](#3演出)<br>
 > 　[・ 操作説明](#4操作説明)
 > <span style="display:block;margin-bottom:0.4em;"></span>
-> [4. 技術紹介](#4技術紹介)
+> [4. 技術紹介](#4技術紹介)<br>
+> 　[・ 空間分割](#1空間分割)<br>
+> 　[・ Unityの拡張エディタとバイナリファイル](#2Unityの拡張エディタとバイナリファイル)<br>
+> 　[・ 吸着判定](#3吸着判定)<br>
+> 　[・ オフスクリーンレンダリング](#4オフスクリーンレンダリング)<br>
 
 --- 
 
@@ -71,6 +75,7 @@
 
 <br>
 
+<span id="1ゲーム内容"></span>
 <span style="font-size: 22px;">**1. ゲーム内容**</span> 
 <span style="display:block;margin-bottom:0.1em;"></span>
 　　　ステージ上のオブジェクトを巻き込み塊を大きくする成長型アクションゲーム
@@ -78,6 +83,7 @@
 <span style="display:block;margin-bottom:2.5em;"></span>
 
 
+<span id="2ルール"></span>
 <span style="font-size: 22px;">**2. ルール**</span> 
 <span style="display:block;margin-bottom:0.1em;"></span>
 > <span style="font-size: 20px;">**くっつけて大きくする**</span> 
@@ -132,7 +138,7 @@
 ---
 <br>
 
-
+<span id="3演出"></span>
 <span style="font-size: 22px;">**3. 演出**</span> 
 <span style="display:block;margin-bottom:0.1em;"></span>
 
@@ -149,6 +155,7 @@
 
 <br>
 
+<span id="4操作説明"></span>
 <span style="font-size: 22px;">**4. 操作説明**</span> 
 <span style="display:block;margin-bottom:0.1em;"></span>  
 
@@ -170,6 +177,7 @@
 
 <br>
 
+<span id="1空間分割"></span>
 <span style="font-size: 22px;">**1. 空間分割**</span> 
 <span style="display:block;margin-bottom:0.1em;"></span>  
 > - AABBを使ってステージ全体で空間分割を行う
@@ -195,7 +203,8 @@
 
 <br>
 
-<span style="font-size: 22px;">**2. Unityの拡張エディタ**</span> 
+<span id="2Unityの拡張エディタとバイナリファイル"></span>
+<span style="font-size: 22px;">**2. Unityの拡張エディタとバイナリファイル**</span> 
 <span style="display:block;margin-bottom:0.1em;"></span>  
 
 > -   Unityのエディタ拡張でオブジェクト配置とパラメータ設定を行い、JSON形式で書き出し。
@@ -206,12 +215,25 @@
 <img src="Markdown_sprite\LightArrow.png" width="80" alt="矢印">
 <img src="Markdown_sprite\json.png" width="200" alt="JSON">
 
-<br>
+<br><br>
+
+> - Toolsからワンクリックでjsonファイルを作れるようにしました  
+> - jsonファイルを自動的にバイナリファイルに変換できるようにし、指定したファイルに作れられるよう変更しました
+
+<img src="Markdown_sprite\CreateJsonFile.png" width="400" alt="jsonファイルを作成">
+
+<br><br>
+
+> - ファイルサイズが7分の1に！
+
+<img src="Markdown_sprite\FileSizeDifference.png" width="400" alt="jsonファイルを作成">
+
 
 ---
 
 <br>
 
+<span id="3吸着判定"></span>
 <span style="font-size: 22px;">**3. 吸着判定**</span> 
 <span style="display:block;margin-bottom:0.1em;"></span>  
 
@@ -223,6 +245,7 @@
 
 <br>
 
+<span id="4オフスクリーンレンダリング"></span>
 <span style="font-size: 22px;">**4. オフスクリーンレンダリング**</span> 
 <span style="display:block;margin-bottom:0.1em;"></span> 
 
@@ -233,6 +256,6 @@
 
 <br>
 
-[目次へ戻る](#目次)
-
 ---
+
+[目次へ戻る](#目次)
