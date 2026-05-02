@@ -215,14 +215,14 @@
 <img src="Markdown_sprite\LightArrow.png" width="80" alt="矢印">
 <img src="Markdown_sprite\json.png" width="200" alt="JSON">
 
-<br><br>
+<br>
 
 > - Toolsからワンクリックでjsonファイルを作れるようにしました  
 > - jsonファイルを自動的にバイナリファイルに変換できるようにし、指定したファイルに作れられるよう変更しました
 
 <img src="Markdown_sprite\CreateJsonFile.png" width="400" alt="jsonファイルを作成">
 
-<br><br>
+<br>
 
 > - ファイルサイズが7分の1に！
 
